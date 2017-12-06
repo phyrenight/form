@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import SelectField, StringField, SubmitField
 from wtforms.validators import DataRequired, Email, Length
 
 class WebForm(FlaskForm):
@@ -16,10 +16,11 @@ class WebForm(FlaskForm):
         'email',
         validators=[DataRequired('Please enter your email address')])
     phone_number = StringField(
-        'phone number',
+        'Phone number',
         validators=[DataRequired('Please enter your phone number')])
-    question_one = StringField(
-        'quetion one',
+    question_one = SelectField(
+        'Coke or Pepsi',
+        choices=[('None', 'None'), ('Pepsi', 'Pepsi'), ('Coke', 'Coke')],
         validators=[DataRequired('Please answer this question'),
         Email('Please enter a valid email address')])
-    submit = Submit('Submit')
+    submit = SubmitField('Submit')
