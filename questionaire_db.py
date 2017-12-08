@@ -9,20 +9,19 @@ class Answers(Base):
     """ Contains questionaire answers
 
         :param int id: Unique id for each submission
-        :param str first_name: 
-        :param str last_name:
         :param str email:
-        :param str phone_number:
         :param str question_one: 
 
     """
     __tablename__ = 'answers'
     id = Column(Integer, primary_key=True)
-    first_name = Column(String(250), nullable=False)
-    last_name = Column(String(250), nullable=False)
     email = Column(String(250), nullable=False)
-    phone_number = Column(String(250), nullable=False)
     question_one = Column(String(250), nullable=False)
+
+    def __init__(self, email, question_one):
+        self.email = email
+        self.question_one = question_one
+
 
 engine = create_engine('sqlite:///questionaire')
 Base.metadata.bind = engine

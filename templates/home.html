@@ -6,18 +6,6 @@
     <form method="POST" action="/home">
       {{ form.hidden_tag() }}
       <div class="form-group">
-        {{ form.first_name.label(class="label") }}
-        {{ form.first_name }}
-      </div>
-      <div class="form-group">
-        {{ form.last_name.label(class="label") }}
-        {{ form.last_name }}
-      </div>
-      <div class="form-group">
-        {{ form.address.label(class="label") }}
-        {{ form.address }}
-      </div>
-      <div class="form-group">
         {{ form.email.label(class="label") }}
         {{ form.email }}
       </div>
@@ -28,6 +16,7 @@
       <div class="submit-button">
         {{ form.submit(class="button") }}
       </div>
+    </form>
   </section>
 </main>
 {% endblock %}
