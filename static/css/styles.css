@@ -1,0 +1,54 @@
+body {
+	background: red;
+    background: linear-gradient(to right, red, blue);
+    background: -webkit-linear-gradient(left, red, blue);
+    background: -o-linear-gradient(right, red, blue);
+    background: -moz-linear-gradient(right, red, blue);
+}
+
+h1,section{
+	background: rgba( 255, 255, 255, 0.58);
+}
+
+
+section{
+	width: 93%;
+	margin: 0 auto;
+	padding: 5% 0%;
+	box-shadow: 10px 5px 5px black;
+}
+
+h1, h2, p {
+	text-align: center;
+}
+
+h1 {
+	width: 93%;
+	margin: 0% auto 100px;
+	padding: 5% 0;
+	font-size: 3em;
+	box-shadow: 10px 5px 5px black;
+}
+
+h2{
+	font-size: 2em;
+}
+
+#results{
+	text-align: initial;
+	padding-left: 5%;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+.coke{
+	font-family: 'Playball', cursive;
+	color: red;
+}
+
+.pepsi{
+	font-family: 'Mukta', sans-serif;
+	color: blue;
+}

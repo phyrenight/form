@@ -8,11 +8,12 @@
     <meta name="keyword" content="coke pepsi" />
     <meta name="description" content="Coke or pepsi survey" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css')}}"/>
-    <link rel="stylesheet" href="static/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Playball" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css?16" />
   </head>
   <body>
     <header>
-      <h1>Coke or Pepsi</h1>
+      <h1><span class="coke">Coke</span> or <span class="pepsi">Pepsi</span></h1>
     </header>
     {% block content %}
     {% endblock %}

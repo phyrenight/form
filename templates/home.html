@@ -2,7 +2,7 @@
 {% block content %}
 <main>
   <section>
-    <h2>Make your choice Coke or Pepsi</h2>
+    <h2>Make your choice <span class="coke">Coke</span> or <span class="pepsi">Pepsi</span></h2>
     <form method="POST" action="/home">
       {{ form.hidden_tag() }}
       <div class="form-group">
