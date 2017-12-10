@@ -4,7 +4,7 @@ from wtforms.validators import DataRequired, Email, Length
 
 class WebForm(FlaskForm):
     email = StringField(
-        'email',
+        'Email',
         validators=[DataRequired('Please enter your email address')])
     question_one = SelectField(
         'Coke or Pepsi',
